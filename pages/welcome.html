@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="welcome.css">
+    <title>Welcome ! to quizz</title>
+</head>
+<!---------------------------Question 1--------------------------------------->
+<div class="main" id="que1">
+
+    <div class="question">
+        <h2>How many stars on the national USA flag ?</h2>
+    </div>
+    <div class="option">
+        <input type="checkbox" class="optionlist" id="wrong11" value="wrong"><label for="">21 stars</label>
+        <input type="checkbox" class="optionlist" id="wrong12" value="wrong"><label for="">32 stars</label>
+        <input type="checkbox" class="optionlist" id="wrong13" value="wrong"><label for="">47 stars</label>
+        <input type="checkbox" class="optionlist" id="right1" value="right"><label for="">51 stars</label>
+    </div>
+    <button onclick="que1()">Next</button>
+</div>
+
+
+<!---------------------------Question 2--------------------------------------->
+
+<div class="main" id="que2" style="display:none;">
+    <div class="question">
+        <h2>In Which Country, white elephent is found ?</h2>
+    </div>
+    <div class="option">
+        <input type="checkbox" id="wrong1" value="wrong"><label for="">India</label>
+        <input type="checkbox" id="wrong2" value="wrong"><label for="">Sri Lanka</label>
+        <input type="checkbox" id="right" value="right"><label for="">Thailand</label>
+        <input type="checkbox" id="wrong3" value="wrong"><label for="">Malaysia</label>
+    </div>
+    <button onclick="que2()">Next</button>
+</div>
+
+
+<!---------------------------Question 3--------------------------------------->
+<div class="main" style="display:none;" id="que3">
+    <div class="question">
+        <h2>The World's longest straight road without any corners located in ?</h2>
+    </div>
+    <div class="option">
+        <input type="checkbox" id="wrong31" value="wrong"><label for="">USA</label>
+        <input type="checkbox" id="wrong32" value="wrong"><label for="">Australia</label>
+        <input type="checkbox" id="right3" value="wrong"><label for="">Saudi Arabia</label>
+        <input type="checkbox" id="wrong33" value="wrong"><label for="">China</label>
+    </div>
+    <button onclick="que3()">Next</button>
+</div>
+
+
+
+<!---------------------------Question 4--------------------------------------->
+<div class="main" style="display:none;" id="que4">
+    <div class="question">
+        <h2>What is a group of lion called ?</h2>
+    </div>
+    <div class="option">
+        <input type="checkbox" id="wrong41" value="wrong"><label for="">Herd</label>
+        <input type="checkbox" id="wrong42" value="wrong"><label for="">Colony</label>
+        <input type="checkbox" id="right4" value="wrong"><label for="">Pride</label>
+        <input type="checkbox" id="wrong43" value="wrong"><label for="">Drift</label>
+    </div>
+    <button onclick="que4()">Next</button>
+</div>
+
+
+
+<!---------------------------Question 5--------------------------------------->
+<div class="main" style="display: none;" id="que5">
+    <div class="question">
+        <h2>In which country is the mountain of gold ?</h2>
+    </div>
+    <div class="option">
+        <input type="checkbox" id="right5" value="wrong"><label for="">Congo</label>
+        <input type="checkbox" id="wrong51" value="wrong"><label for="">China</label>
+        <input type="checkbox" id="wrong52" value="wrong"><label for="">India</label>
+        <input type="checkbox" id="wrong53" value="wrong"><label for="">Pakistan</label>
+    </div>
+    <button onclick="que5()">Next</button>
+</div>
+
+
+
+
+<!---------------------------Results Page--------------------------------------->
+<div class="main" style="display: none;" id="result">
+    <div class="result">
+        <h2 id="totQue">Total Questions : <span></span></h2>
+        <h2 id="chore">Score : <span></span></h2>
+    </div>
+    <div class="option">
+        <img src="minion-congrats.gif" alt="" id="s">
+        <br>
+        <button><a href="../index2.html">Restart</a></button>
+    </div>
+</div>
+
+
+<body>
+
+
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
